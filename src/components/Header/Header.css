@@ -1,0 +1,13 @@
+.header{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.header-link {
+  display: inline-block;
+}
+
+.header-link:hover{
+  text-decoration: underline;
+}

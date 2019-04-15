@@ -42,48 +42,58 @@ class RegistrationForm extends Component {
     return (
       <form
         onSubmit={this.handleSubmit}
+        className='reg-form'
       >
         <div role='alert'>
-          {error && <p>{error}</p>}
+          {error && <p className='error-message'>{error}</p>}
         </div>
-        <div>
-          <Label htmlFor='registration-name-input'>
+        <div className='reg-name'>
+          <Label className= 'reg-label' htmlFor='registration-name-input'>
             Enter your name<Required />
           </Label>
           <Input
             ref={this.firstInput}
             id='registration-name-input'
             name='name'
+            className='reg-input'
+            placeholder='Enter your name'
             required
           />
         </div>
-        <div>
-          <Label htmlFor='registration-username-input'>
+        <div className='reg-username'>
+          <Label className= 'reg-label' htmlFor='registration-username-input'>
             Choose a username<Required />
           </Label>
           <Input
             id='registration-username-input'
             name='username'
+            className='reg-input'
+            placeholder='Choose a username'
             required
           />
         </div>
-        <div>
-          <Label htmlFor='registration-password-input'>
+        <div className='reg-pasword'>
+          <Label  className= 'reg-label' htmlFor='registration-password-input'>
             Choose a password<Required />
           </Label>
           <Input
             id='registration-password-input'
             name='password'
             type='password'
+            className='reg-input'
+            placeholder='Choose a password'
             required
           />
         </div>
-        <footer>
-          <Button type='submit'>
+        <footer className='reg-footer'>
+          <Button className='reg-button' type='submit'>
             Sign up
           </Button>
           {' '}
-          <Link to='/login'>Already have an account?</Link>
+          <div className="reg-link">
+          <Link className='reg-link' to='/login'>Already have an account?</Link>
+          </div>
+          
         </footer>
       </form>
     )

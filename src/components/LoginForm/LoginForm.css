@@ -1,10 +1,10 @@
-.reg-form {
+.LoginForm{
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.reg-input {
+.login-input {
   max-width: 500px;
   width: 100%;
   font-size: 16px;
@@ -13,11 +13,11 @@
   margin-bottom: 1%;
 }
 
-.reg-label {
+.login-label {
   display: none;
 }
 
-.reg-button {
+.login-button {
   max-width: 500px;
   display: block;
   width: 100%;
@@ -31,32 +31,33 @@
   cursor: pointer;
 }
 
-.reg-link {
+.login-link {
   text-align: center;
   margin: 1%;
 }
 
-.reg-link:hover {
-  text-decoration: underline;
+.error-message {
+  font-weight: bold;
+  color: red;
 }
 
 @media screen and (min-width: 600px) {
-  .reg-form{
+  .LoginForm{
     text-align: center;
   }
 
-  .reg-button {
+  .login-button {
     margin-left: auto;
     margin-right: auto;
     margin-top: 0px;
   }
 
-  .reg-input{
+  .login-input{
     margin-bottom: 10px;
     margin-top: 10px;
   }
 
-  .reg-link {
+  .login-link {
     margin: 10px;
   }
 }
