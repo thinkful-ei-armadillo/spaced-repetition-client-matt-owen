@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import WordList from "../../components/WordList/WordList";
 import LanguageService from "../../services/language-api-service";
 import UserContext from "../../contexts/UserContext";
+import "./DashboardRoute.css";
 
 class DashboardRoute extends Component {
 	static contextType = UserContext;
@@ -22,7 +23,7 @@ class DashboardRoute extends Component {
 					Total correct answers: {this.context.language.total_score}
 				</h2>
 				<WordList />
-				{"Words to Practice"}
+				<h3>{"Words to Practice"}</h3>
 				{"<WordListItem />"}
 			</section>
 		);
