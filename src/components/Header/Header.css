@@ -4,6 +4,10 @@
   align-items: center;
 }
 
+.header-link {
+  display: inline-block;
+}
+
 .header-link:hover{
   text-decoration: underline;
 }
