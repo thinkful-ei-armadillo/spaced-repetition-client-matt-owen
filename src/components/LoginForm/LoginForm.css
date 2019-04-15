@@ -28,7 +28,7 @@
   color: white;
   height: 40px;
   margin-top: 2%;  
-
+  cursor: pointer;
 }
 
 .login-link {

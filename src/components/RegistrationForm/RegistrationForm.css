@@ -14,7 +14,6 @@
 }
 
 .reg-label {
-  /* max-width: 500px; */
   display: none;
 }
 
@@ -29,12 +28,16 @@
   color: white;
   height: 40px;
   margin-top: 2%;  
-
+  cursor: pointer;
 }
 
 .reg-link {
   text-align: center;
   margin: 1%;
+}
+
+.reg-link:hover {
+  text-decoration: underline;
 }
 
 @media screen and (min-width: 600px) {

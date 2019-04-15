@@ -3,3 +3,7 @@
   justify-content: space-evenly;
   align-items: center;
 }
+
+.header-link:hover{
+  text-decoration: underline;
+}
