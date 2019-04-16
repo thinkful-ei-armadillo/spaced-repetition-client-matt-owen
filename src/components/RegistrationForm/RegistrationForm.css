@@ -1,62 +1,70 @@
 .reg-form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
 .reg-input {
-  max-width: 500px;
-  width: 100%;
-  font-size: 16px;
-  height: 40px;
-  margin-top: 1%;
-  margin-bottom: 1%;
+	border: 0px;
+	box-shadow: 4px 4px #d3d3d3;
+	padding-left: 5px;
+	max-width: 500px;
+	width: 100%;
+	font-size: 16px;
+	height: 40px;
+	margin-top: 1%;
+	margin-bottom: 1%;
 }
 
 .reg-label {
-  display: none;
+	display: none;
 }
 
 .reg-button {
-  max-width: 500px;
-  display: block;
-  width: 100%;
-  font-size: 16px;
-  background: #4d90fe;
-  border-color: #3079ed;
-  font-weight: bold;
-  color: white;
-  height: 40px;
-  margin-top: 2%;  
-  cursor: pointer;
+	max-width: 500px;
+	display: block;
+	width: 100%;
+	font-size: 16px;
+	background: #4d90fe;
+	border: 0px;
+	box-shadow: 4px 4px #d3d3d3;
+	font-weight: bold;
+	color: white;
+	height: 40px;
+	margin-top: 2%;
+	cursor: pointer;
 }
 
 .reg-link {
-  text-align: center;
-  margin: 1%;
+	text-align: center;
+	margin: 1%;
 }
 
 .reg-link:hover {
-  text-decoration: underline;
+	text-decoration: underline;
 }
 
 @media screen and (min-width: 600px) {
-  .reg-form{
-    text-align: center;
-  }
+	.reg-form {
+		text-align: center;
+	}
 
-  .reg-button {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 0px;
-  }
+	.reg-button {
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 0px;
+	}
 
-  .reg-input{
-    margin-bottom: 10px;
-    margin-top: 10px;
-  }
+	.reg-button:hover {
+		background-color: #739fe5;
+	}
 
-  .reg-link {
-    margin: 10px;
-  }
+	.reg-input {
+		margin-bottom: 10px;
+		margin-top: 10px;
+	}
+
+	.reg-link {
+		margin: 10px;
+	}
 }

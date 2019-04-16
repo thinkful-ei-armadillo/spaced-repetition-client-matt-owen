@@ -1,63 +1,71 @@
-.LoginForm{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.LoginForm {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
 .login-input {
-  max-width: 500px;
-  width: 100%;
-  font-size: 16px;
-  height: 40px;
-  margin-top: 1%;
-  margin-bottom: 1%;
+	border: 0px;
+	box-shadow: 4px 4px #d3d3d3;
+	padding-left: 5px;
+	max-width: 500px;
+	width: 100%;
+	font-size: 16px;
+	height: 40px;
+	margin-top: 1%;
+	margin-bottom: 1%;
 }
 
 .login-label {
-  display: none;
+	display: none;
 }
 
 .login-button {
-  max-width: 500px;
-  display: block;
-  width: 100%;
-  font-size: 16px;
-  background: #4d90fe;
-  border-color: #3079ed;
-  font-weight: bold;
-  color: white;
-  height: 40px;
-  margin-top: 2%;  
-  cursor: pointer;
+	max-width: 500px;
+	display: block;
+	width: 100%;
+	font-size: 16px;
+	background: #4d90fe;
+	border: 0px;
+	box-shadow: 4px 4px #d3d3d3;
+	font-weight: bold;
+	color: white;
+	height: 40px;
+	margin-top: 2%;
+	cursor: pointer;
+}
+
+.login-button:hover {
+	background-color: #739fe5;
 }
 
 .login-link {
-  text-align: center;
-  margin: 1%;
+	text-align: center;
+	margin: 1%;
 }
 
 .error-message {
-  font-weight: bold;
-  color: red;
+	font-weight: bold;
+	color: red;
 }
 
 @media screen and (min-width: 600px) {
-  .LoginForm{
-    text-align: center;
-  }
+	.LoginForm {
+		text-align: center;
+	}
 
-  .login-button {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 0px;
-  }
+	.login-button {
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 0px;
+	}
 
-  .login-input{
-    margin-bottom: 10px;
-    margin-top: 10px;
-  }
+	.login-input {
+		margin-bottom: 10px;
+		margin-top: 10px;
+	}
 
-  .login-link {
-    margin: 10px;
-  }
+	.login-link {
+		margin: 10px;
+	}
 }

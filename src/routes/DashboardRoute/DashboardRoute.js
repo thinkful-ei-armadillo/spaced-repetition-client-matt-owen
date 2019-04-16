@@ -17,14 +17,17 @@ class DashboardRoute extends Component {
 			""
 		) : (
 			<section className="dashboard">
-				<Link to={"/learn"}>{"Start Practicing"}</Link>
+				<Link to={"/learn"} className={"practice-link"}>
+					{"Start Practicing"}
+				</Link>
 				<h2 className="language"> Practicing {this.context.language.name}</h2>
 				<h2 className="total_correct">
 					Total correct answers: {this.context.language.total_score}
 				</h2>
-				<WordList />
-				<h3>{"Words to Practice"}</h3>
-				{"<WordListItem />"}
+				<h3 className={"wordlist-header"}>{"Words to Practice"}</h3>
+				<ul className={"wordlist"}>
+					<WordList />
+				</ul>
 			</section>
 		);
 	}

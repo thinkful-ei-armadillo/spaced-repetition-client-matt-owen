@@ -1,14 +1,10 @@
 * {
-  box-sizing: border-box;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	box-sizing: border-box;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 a {
-  text-decoration: none;
-  padding: 4px;
-  color: black;
-  }
-
-html {
-  background-color: rgb(211,211,211);
+	text-decoration: none;
+	padding: 4px;
+	color: black;
 }
