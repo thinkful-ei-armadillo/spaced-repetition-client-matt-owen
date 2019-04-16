@@ -13,7 +13,8 @@ const UserContext = React.createContext({
 	setError: () => {},
 	clearError: () => {},
 	processLogin: () => {},
-	processLogout: () => {}
+	processLogout: () => {},
+	setHead: () => {}
 });
 
 export default UserContext;
@@ -65,6 +66,12 @@ export class UserProvider extends Component {
 			languageWords: language.words
 		});
 	};
+
+	setHead = head => {
+		this.setState({
+			currentWord: head
+		})
+	}
 
 	setError = error => {
 		console.error(error);
@@ -128,7 +135,8 @@ export class UserProvider extends Component {
 			setError: this.setError,
 			clearError: this.clearError,
 			processLogin: this.processLogin,
-			processLogout: this.processLogout
+			processLogout: this.processLogout,
+			currentWord: this.setHead
 		};
 		return (
 			<UserContext.Provider value={value}>
