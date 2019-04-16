@@ -17,9 +17,11 @@ class DashboardRoute extends Component {
 			""
 		) : (
 			<section className="dashboard">
-				<Link to={"/learn"} className={"practice-link"}>
-					{"Start Practicing"}
-				</Link>
+				<div className={"start"}>
+					<Link to={"/learn"} className={"practice-link"}>
+						<button>{"Start Practicing"}</button>
+					</Link>
+				</div>
 				<h2 className="language"> Practicing {this.context.language.name}</h2>
 				<h2 className="total_correct">
 					Total correct answers: {this.context.language.total_score}

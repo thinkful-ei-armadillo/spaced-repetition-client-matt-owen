@@ -10,10 +10,29 @@ li {
 	width: 75%;
 	margin: auto;
 	padding-top: 10px;
+	text-shadow: 1px 1px #a9a9a9;
 }
 
-.practice-link:hover {
-	text-decoration: underline;
+div.start {
+	margin: auto;
+}
+
+.start button {
+	max-width: 500px;
+	display: block;
+	width: 100%;
+	font-size: 16px;
+	background: #4d90fe;
+	border: 0px;
+	box-shadow: 4px 4px #d3d3d3;
+	font-weight: bold;
+	height: 40px;
+	margin-top: 2%;
+	cursor: pointer;
+}
+
+.start button:hover {
+	background-color: #739fe5;
 }
 
 .wordlist-header {
@@ -40,8 +59,7 @@ ul {
 	box-shadow: 4px 4px #d3d3d3;
 }
 
-.language {
-	text-shadow: 1px 1px #a9a9a9;
+h4.language {
 	padding: 5px;
 }
 

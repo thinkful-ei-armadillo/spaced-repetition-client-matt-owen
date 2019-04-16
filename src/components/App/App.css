@@ -3,8 +3,11 @@
 	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.App {
+	background-color: #fafafa;
+}
+
 a {
 	text-decoration: none;
-	padding: 4px;
 	color: black;
 }

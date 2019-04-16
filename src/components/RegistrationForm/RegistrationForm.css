@@ -35,6 +35,10 @@
 	cursor: pointer;
 }
 
+.reg-button:hover {
+	background-color: #739fe5;
+}
+
 .reg-link {
 	text-align: center;
 	margin: 1%;
@@ -53,10 +57,6 @@
 		margin-left: auto;
 		margin-right: auto;
 		margin-top: 0px;
-	}
-
-	.reg-button:hover {
-		background-color: #739fe5;
 	}
 
 	.reg-input {

@@ -8,6 +8,11 @@
 	box-shadow: 0px 5px #d3d3d3;
 }
 
+.header-logout {
+	display: flex;
+	flex-direction: row-reverse;
+}
+
 .header-link {
 	display: inline-block;
 }

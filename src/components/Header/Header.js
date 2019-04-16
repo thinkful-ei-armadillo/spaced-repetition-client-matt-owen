@@ -15,7 +15,7 @@ class Header extends Component {
 		return (
 			<div>
 				<span>{this.context.user.name}</span>
-				<nav>
+				<nav className={"header-logout"}>
 					<Link
 						className={"header-link"}
 						onClick={this.handleLogoutClick}
