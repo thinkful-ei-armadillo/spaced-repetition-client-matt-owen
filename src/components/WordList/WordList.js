@@ -10,14 +10,15 @@ class WordList extends Component {
 			? ""
 			: languageWords.map(word => {
 					return (
-						<li className="word">
-							<h4 className="language">{word.original}</h4>
-							<p>{`correct answer count: ${word.correct_count}`}</p>
-							<p>{`incorrect answer count: ${word.incorrect_count}`}</p>
-						</li>
+						<div className="wordlist-container">
+							<li className="word" key={word.id}>
+								<h4 className="language">{word.original}</h4>
+								<p>{`correct answer count: ${word.correct_count}`}</p>
+								<p>{`incorrect answer count: ${word.incorrect_count}`}</p>
+							</li>
+						</div>
 					);
 			  });
 	}
 }
-
 export default WordList;
