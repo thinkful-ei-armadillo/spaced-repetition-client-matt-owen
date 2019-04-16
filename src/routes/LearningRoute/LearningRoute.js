@@ -1,16 +1,13 @@
 import React, { Component } from "react";
-import UserContext from "../../contexts/UserContext";
-import LanguageService from "../../services/language-api-service";
+import WordListItem from '../../components/WordListItem/WordListItem'
 
 class LearningRoute extends Component {
-	static contextType = UserContext;
-
-	componentDidMount() {
-		LanguageService.getHead().then(this.context.currentWord);
-	}
 
 	render() {
-		return <section>LearningRoute</section>;
+		return (
+		<section>
+			<WordListItem />
+		</section>);
 	}
 }
 
