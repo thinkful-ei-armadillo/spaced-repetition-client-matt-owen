@@ -1,13 +1,13 @@
 import React, { Component } from "react";
-import WordListItem from '../../components/WordListItem/WordListItem'
+import WordListItem from "../../components/WordListItem/WordListItem";
 
 class LearningRoute extends Component {
-
 	render() {
 		return (
-		<section>
-			<WordListItem />
-		</section>);
+			<div className={"learning"}>
+				<WordListItem />
+			</div>
+		);
 	}
 }
 

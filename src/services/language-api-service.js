@@ -12,7 +12,7 @@ const LanguageApiService = {
 			!res.ok ? res.json().then(e => Promise.reject(e)) : res.json()
 		);
 	},
-	
+
 	getHead() {
 		return fetch(`${config.API_ENDPOINT}/language/head`, {
 			method: "GET",
@@ -25,13 +25,13 @@ const LanguageApiService = {
 	},
 
 	postGuess(guess) {
-		return fetch(`${config.API_ENDPOINT}/language/head`, {
+		return fetch(`${config.API_ENDPOINT}/language/guess`, {
 			method: "POST",
 			headers: {
-				'Content-Type': "application/json",
+				"Content-Type": "application/json",
 				authorization: `Bearer ${TokenService.getAuthToken()}`
 			},
-			body : JSON.stringify(guess)
+			body: JSON.stringify({ guess })
 		}).then(res =>
 			!res.ok ? res.json().then(e => Promise.reject(e)) : res.json()
 		);

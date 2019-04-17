@@ -19,14 +19,14 @@ class DashboardRoute extends Component {
 			<section className="dashboard">
 				<div className={"start"}>
 					<Link to={"/learn"} className={"practice-link"}>
-						<button>{"Start Practicing"}</button>
+						<button>{"Start practicing"}</button>
 					</Link>
 				</div>
 				<h2 className="language"> Practicing {this.context.language.name}</h2>
 				<h2 className="total_correct">
 					Total correct answers: {this.context.language.total_score}
 				</h2>
-				<h3 className={"wordlist-header"}>{"Words to Practice"}</h3>
+				<h3 className={"wordlist-header"}>{"Words to practice"}</h3>
 				<ul className={"wordlist"}>
 					<WordList />
 				</ul>
