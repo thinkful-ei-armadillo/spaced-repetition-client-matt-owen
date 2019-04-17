@@ -59,18 +59,26 @@ export default class WordListItem extends Component {
 
 		return this.state.displayFeedback ? (
 			<div className="word-item-container">
-				<p className={"DisplayScore"}>
-					{`Your total score is: ${this.context.currentWord.totalScore}`}
-				</p>
-				<h2 className={"response"}>{h2Response}</h2>
-				<p className={"DisplayFeedback"}>{feedback}</p>
-				<button
-					id={"learn-guess-button"}
-					onClick={() => {
-						this.handleClick();
-					}}>
-					Try another word!
-				</button>
+				<div className="container">
+					<div className="word-item-form">
+						<div className="DisplayScore">
+							<p>{`Your total score is: ${
+								this.context.currentWord.totalScore
+							}`}</p>
+						</div>
+						<h2 className="response">{h2Response}</h2>
+						<div className="DisplayFeedback">
+							<p className="feedback">{feedback}</p>
+						</div>
+						<button
+							id={"learn-guess-button"}
+							onClick={() => {
+								this.handleClick();
+							}}>
+							Try another word!
+						</button>
+					</div>
+				</div>
 			</div>
 		) : (
 			<div className="word-item-container">
