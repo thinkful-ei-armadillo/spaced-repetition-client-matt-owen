@@ -10,7 +10,7 @@ class WordList extends Component {
 			? ""
 			: languageWords.map(word => {
 					return (
-						<div className="wordlist-container">
+						<div className="wordlist-container" key={word.id}>
 							<li className="word" key={word.id}>
 								<h4 className="language">{word.original}</h4>
 								<p>{`correct answer count: ${word.correct_count}`}</p>
