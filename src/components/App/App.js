@@ -6,6 +6,7 @@ import PublicOnlyRoute from "../PublicOnlyRoute/PublicOnlyRoute";
 import RegistrationRoute from "../../routes/RegistrationRoute/RegistrationRoute";
 import LoginRoute from "../../routes/LoginRoute/LoginRoute";
 import DashboardRoute from "../../routes/DashboardRoute/DashboardRoute";
+import LearningRoute from "../../routes/LearningRoute/LearningRoute";
 import NotFoundRoute from "../../routes/NotFoundRoute/NotFoundRoute";
 import "./App.css";
 
@@ -22,7 +23,7 @@ export default class App extends Component {
 		return (
 			<div className="App">
 				<Header />
-				<main role='main'>
+				<main role="main">
 					{hasError && <p>There was an error! Oh no!</p>}
 					<Switch>
 						<PrivateRoute exact path={"/"} component={DashboardRoute} />

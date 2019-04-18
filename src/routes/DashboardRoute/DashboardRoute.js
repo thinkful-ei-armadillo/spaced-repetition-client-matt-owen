@@ -11,6 +11,10 @@ class DashboardRoute extends Component {
 	componentDidMount() {
 		LanguageService.getLanguage().then(this.context.setLanguage);
 	}
+	componentWillUnmount() {
+		this.context.clearWords();
+	}
+
 	render() {
 		const { language = null } = this.context;
 		return !language ? (
