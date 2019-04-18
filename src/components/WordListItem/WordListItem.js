@@ -46,7 +46,6 @@ export default class WordListItem extends Component {
   }
 
   render() {
-    // console.log(this.context.currentWord);
     let h2Response, feedback;
     if (this.state.displayFeedback) {
       h2Response = this.context.currentWord.isCorrect
@@ -55,10 +54,12 @@ export default class WordListItem extends Component {
       feedback = (
         <p className="feedback">
           The correct translation for{" "}
-          <span className="feedback-span">{this.state.original}</span> was  
-           {' '}
-					 <span className="feedback-span">
-             {this.context.currentWord.answer}
+          <span lang="es" className="feedback-span">
+            {this.state.original}
+          </span>{" "}
+          was{" "}
+          <span className="feedback-span">
+            {this.context.currentWord.answer}
           </span>{" "}
           and you chose {this.state.guess}!
         </p>
@@ -91,13 +92,14 @@ export default class WordListItem extends Component {
       <div className="word-item-container">
         {this.context.currentWord && (
           <div className="container">
-            <h2 />
             <form
               className="word-item-form"
               onSubmit={e => this.handleSubmit(e)}
             >
               <h2 className="word-header">Translate the word:</h2>
-              <span id="word">{this.context.currentWord.nextWord}</span>
+              <span lang="es" id="word">
+                {this.context.currentWord.nextWord}
+              </span>
               <label htmlFor="learn-guess-input">
                 What's the translation for this word?
               </label>

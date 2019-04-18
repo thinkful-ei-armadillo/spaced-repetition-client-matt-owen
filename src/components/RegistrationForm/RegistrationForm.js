@@ -86,7 +86,7 @@ class RegistrationForm extends Component {
           />
         </div>
         <footer className='reg-footer'>
-          <Button className='reg-button' type='submit'>
+          <Button role='button' className='reg-button' type='submit'>
             Sign up
           </Button>
           {' '}

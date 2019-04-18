@@ -8,7 +8,6 @@ import LoginRoute from "../../routes/LoginRoute/LoginRoute";
 import DashboardRoute from "../../routes/DashboardRoute/DashboardRoute";
 import LearningRoute from "../../routes/LearningRoute/LearningRoute";
 import NotFoundRoute from "../../routes/NotFoundRoute/NotFoundRoute";
-import WordListItem from "../WordListItem/WordListItem";
 import "./App.css";
 
 export default class App extends Component {
@@ -24,11 +23,11 @@ export default class App extends Component {
 		return (
 			<div className="App">
 				<Header />
-				<main>
+				<main role='main'>
 					{hasError && <p>There was an error! Oh no!</p>}
 					<Switch>
 						<PrivateRoute exact path={"/"} component={DashboardRoute} />
-						<PrivateRoute path={"/learn"} component={WordListItem} />
+						<PrivateRoute path={"/learn"} component={LearningRoute} />
 						<PublicOnlyRoute path={"/register"} component={RegistrationRoute} />
 						<PublicOnlyRoute path={"/login"} component={LoginRoute} />
 						<Route component={NotFoundRoute} />

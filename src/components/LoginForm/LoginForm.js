@@ -77,7 +77,7 @@ class LoginForm extends Component {
             required
           />
         </div>
-        <Button className='login-button' type='submit'>
+        <Button role='button'className='login-button' type='submit'>
           Login
         </Button>
       </form>
