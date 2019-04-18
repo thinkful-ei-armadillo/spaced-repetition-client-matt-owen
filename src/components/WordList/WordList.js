@@ -12,7 +12,7 @@ class WordList extends Component {
 					return (
 						<div className="wordlist-container" key={word.id}>
 							<li className="word" key={word.id}>
-								<h4 className="language">{word.original}</h4>
+								<h4  lang='es' className="language">{word.original}</h4>
 								<p>{`correct answer count: ${word.correct_count}`}</p>
 								<p>{`incorrect answer count: ${word.incorrect_count}`}</p>
 							</li>

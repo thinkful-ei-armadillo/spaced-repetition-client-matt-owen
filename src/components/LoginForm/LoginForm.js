@@ -41,45 +41,48 @@ class LoginForm extends Component {
 		this.firstInput.current.focus();
 	}
 
-	render() {
-		const { error } = this.state;
-		return (
-			<form className="LoginForm" onSubmit={this.handleSubmit}>
-				<div role="alert">
-					{error && <p className="error-message">{error}</p>}
-				</div>
-				<div>
-					<Label className="login-label" htmlFor="login-username-input">
-						Username
-					</Label>
-					<Input
-						className="login-input"
-						ref={this.firstInput}
-						id="login-username-input"
-						name="username"
-						placeholder="Username"
-						required
-					/>
-				</div>
-				<div>
-					<Label className="login-label" htmlFor="login-password-input">
-						Password
-					</Label>
-					<Input
-						className="login-input"
-						id="login-password-input"
-						name="password"
-						type="password"
-						placeholder="Password"
-						required
-					/>
-				</div>
-				<Button className="login-button" type="submit">
-					Login
-				</Button>
-			</form>
-		);
-	}
+  render() {
+    const { error } = this.state
+    return (
+      <form
+        className='LoginForm'
+        onSubmit={this.handleSubmit}
+      >
+        <div role='alert'>
+          {error && <p className='error-message'>{error}</p>}
+        </div>
+        <div>
+          <Label className= 'login-label' htmlFor='login-username-input'>
+            Username
+          </Label>
+          <Input
+            className='login-input'
+            ref={this.firstInput}
+            id='login-username-input'
+            name='username'
+            placeholder='Username'
+            required
+          />
+        </div>
+        <div>
+          <Label className= 'login-label' htmlFor='login-password-input'>
+            Password
+          </Label>
+          <Input
+          className='login-input'
+            id='login-password-input'
+            name='password'
+            type='password'
+            placeholder='Password'
+            required
+          />
+        </div>
+        <Button role='button'className='login-button' type='submit'>
+          Login
+        </Button>
+      </form>
+    )
+  }
 }
 
 export default LoginForm;
