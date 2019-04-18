@@ -1,5 +1,10 @@
 .reg-form-container {
- padding: 4%;
+  padding: 4%;
+  box-shadow: 4px 4px 4px 4px #d3d3d3;
+  margin-left: auto;
+  max-width: 600px;
+  margin-right: auto;
+  margin-top: 15px;
 }
 
 .reg-text-container {
