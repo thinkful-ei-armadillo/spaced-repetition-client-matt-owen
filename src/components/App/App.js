@@ -6,7 +6,6 @@ import PublicOnlyRoute from "../PublicOnlyRoute/PublicOnlyRoute";
 import RegistrationRoute from "../../routes/RegistrationRoute/RegistrationRoute";
 import LoginRoute from "../../routes/LoginRoute/LoginRoute";
 import DashboardRoute from "../../routes/DashboardRoute/DashboardRoute";
-import LearningRoute from "../../routes/LearningRoute/LearningRoute";
 import NotFoundRoute from "../../routes/NotFoundRoute/NotFoundRoute";
 import WordListItem from "../WordListItem/WordListItem";
 import "./App.css";
